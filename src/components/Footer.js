@@ -48,7 +48,7 @@ const Footer = () => {
         <span>&copy; 2025 VICONT. Todos los derechos reservados.</span>
         <span>
           Desarrollado por
-          <a href="https://localhost:3000" target="_blank" rel="noopener noreferrer">
+          <a href="/" target="_blank" rel="noopener noreferrer">
             VICONT
           </a>
           .
