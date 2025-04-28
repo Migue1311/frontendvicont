@@ -1,0 +1,67 @@
+.txtConverter {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 2rem;
+    background: #f5f2f2;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .hiddenInput {
+    display: none;
+  }
+  
+  .dropZone {
+    padding: 20px;
+    border: 2px dashed #c5a9a9;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: border-color 0.3s;
+    background-color: #f9f9f9;
+  }
+  
+  .dropZone:hover {
+    border-color: #4a90e2;
+    background-color: #f0f8ff;
+  }
+  
+  .button {
+    padding: 12px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #357ab8;
+  }
+  
+  .fileList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    max-height: 150px;
+    overflow-y: auto;
+    font-size: 14px;
+  }
+  
+  .fileList li {
+    background-color: #f0f0f0;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  

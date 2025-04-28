@@ -1,0 +1,51 @@
+/* Contact.css */
+.contact {
+  padding: 2rem;
+  background-color: #010a3bd8;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #039db8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-columns {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.form-column {
+  flex: 1 1 45%; 
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.desc-black {
+  font-weight: bold;
+  color: black;
+}
+
+
+
+  
+/*Diseño Responsivo */
+@media (max-width: 768px) {
+  .form-columns {
+    flex-direction: column;  /*Cambia a una sola columna en pantallas pequeñas */
+  }
+
+  .contact-form-container {
+    max-width: 600px;
+  }
+}

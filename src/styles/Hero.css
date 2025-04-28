@@ -1,0 +1,44 @@
+/* Estilo general del hero */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 70vh; /* Ocupa toda la altura de la pantalla */
+  background-image: url('../images/hero-office.jpg'); /* Cambia por la ruta de tu imagen */
+  background-size: cover; /* Asegura que la imagen cubra todo el espacio */
+  background-position: center; /* Centra la imagen */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  color: white; /* Color del texto */
+  text-align: center; /* Alineación del texto */
+}
+
+/* Overlay para reducir la intensidad de la imagen */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de transparencia */
+  z-index: 1;
+}
+
+/* Contenido del hero */
+.hero-content {
+  position: relative;
+  z-index: 2; /* El contenido está encima del overlay */
+  max-width: 600px; /* Limita el ancho del contenido */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease forwards;
+  top: -6%;
+}
+@keyframes fadeIn{
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
