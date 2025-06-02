@@ -39,6 +39,17 @@
   flex-wrap: wrap;
 }
 
+/*Diseño Responsivo */
+@media (max-width: 768px) {
+  .form-columns {
+    flex-direction: column;  /*Cambia a una sola columna en pantallas pequeñas */
+  }
+
+  .contact-form-container {
+    max-width: 600px;
+  }
+}
+
 
   
   
