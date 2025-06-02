@@ -1,19 +1,33 @@
-/* Estilo general del hero */
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+/* Hero Section */
 .hero {
   position: relative;
   width: 100%;
-  height: 70vh; /* Ocupa toda la altura de la pantalla */
-  background-image: url('../images/hero-office.jpg'); /* Cambia por la ruta de tu imagen */
-  background-size: cover; /* Asegura que la imagen cubra todo el espacio */
-  background-position: center; /* Centra la imagen */
+  height: 80vh; /* Un poco más alto en desktop */
+  min-height: 400px; /* Evita que sea muy pequeño en pantallas pequeñas */
+  background-image: url('../images/hero-office.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  color: white; /* Color del texto */
-  text-align: center; /* Alineación del texto */
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
 }
 
-/* Overlay para reducir la intensidad de la imagen */
+/* Overlay oscuro */
 .hero::before {
   content: '';
   position: absolute;
@@ -21,35 +35,80 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de transparencia */
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
 /* Contenido del hero */
 .hero-content {
   position: relative;
-  z-index: 2; /* El contenido está encima del overlay */
-  max-width: 600px; /* Limita el ancho del contenido */
+  z-index: 2;
+  max-width: 600px;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeIn 1s ease forwards;
-  top: -6%;
 }
-@keyframes fadeIn{
-  to{
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-/*Diseño Responsivo */
+/* Títulos y botón */
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero .btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #005bb5;
+}
+
+/* Estilos para móviles */
 @media (max-width: 768px) {
+  .hero {
+    height: 90vh; /* Más espacio vertical en móviles */
+    padding: 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .hero .btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+
   .form-columns {
-    flex-direction: column;  /*Cambia a una sola columna en pantallas pequeñas */
+    flex-direction: column;
   }
 
   .contact-form-container {
-    max-width: 600px;
+    max-width: 100%;
+    padding: 1rem;
   }
 }
-

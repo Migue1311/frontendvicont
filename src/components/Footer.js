@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Footer.css'; // Importa los estilos CSS
-import { FaFacebookSquare, FaInstagram, FaTiktok, FaWhatsapp, FaMailBulk } from "react-icons/fa";
+import { FaFacebookSquare, FaInstagram, FaWhatsapp, FaMailBulk } from "react-icons/fa";
 
 const Footer = () => {
   return (
