@@ -1,21 +1,24 @@
-/* src/components/Services.css */
-.services {
-  padding: 4rem 0;
-  background-image: url('../images/fondoplomo.png');
-  background-size: cover; /* Asegura que la imagen cubra todo el espacio */
-  background-position: center;
-  background-color: #666;
+/* Reset básico */
+* {
+  box-sizing: border-box;
 }
 
-.service-container{
+.services {
+  padding: 4rem 2rem;
+  background-image: url('../images/fondoplomo.png');
+  background-size: cover;
+  background-position: center;
+  background-color: #666;
+  position: relative;
   color: #666;
 }
 
 .services-logo {
   position: absolute;
   top: 110%;
-  left: 34%;
-  width: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 90%;
   height: auto;
   opacity: 0.07;
   z-index: 1;
@@ -23,12 +26,11 @@
 }
 
 .service-title {
-  width: 100px;
-  text-align: center;
   font-size: 2.5rem;
   margin-bottom: 2rem;
   color: rgb(87, 86, 86);
-  position : relative;
+  text-align: center;
+  position: relative;
   z-index: 2;
 }
 
@@ -39,17 +41,27 @@
   flex-wrap: wrap;
 }
 
-/*Diseño Responsivo */
+/* Responsive para móviles */
 @media (max-width: 768px) {
+  .services {
+    padding: 3rem 1rem;
+  }
+
+  .services-logo {
+    top: 120%;
+    max-width: 100%;
+  }
+
+  .service-title {
+    font-size: 2rem;
+  }
+
+  /* Estilos adicionales si usas formularios */
   .form-columns {
-    flex-direction: column;  /*Cambia a una sola columna en pantallas pequeñas */
+    flex-direction: column;
   }
 
   .contact-form-container {
-    max-width: 600px;
+    max-width: 100%;
   }
 }
-
-
-  
-  
