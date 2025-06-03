@@ -28,14 +28,8 @@ const Header = () => {
     return (
         <header className="header">
             <div className="container">
-                <div className="logo-and-text">
-                    <div className="logo-container">
-                        <img src={logo} alt="company logo" className="logo" />
-                    </div>
-                    <div className="slogan">
-                        <span className='header-title'>TU CONTADOR</span>
-                        <span className='header-subtitle'>VIRTUAL</span>
-                    </div>
+                <div className="logo-container">
+                    <img src={logo} alt="company logo" className="logo" />
                 </div>
                 <nav className="nav">
                     <ul>

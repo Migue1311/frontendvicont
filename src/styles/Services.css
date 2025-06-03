@@ -15,7 +15,7 @@
 
 .services-logo {
   position: absolute;
-  top: 110%;
+  top: 20%;
   left: 50%;
   transform: translateX(-50%);
   max-width: 90%;
@@ -48,7 +48,7 @@
   }
 
   .services-logo {
-    top: 120%;
+    top: 100%;
     max-width: 100%;
   }
 

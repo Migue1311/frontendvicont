@@ -11,8 +11,8 @@ const Footer = () => {
         <div className="footer-section contact-info">
           <h4>Contacto</h4>
           <span><FaWhatsapp size={15} color="#007bff "/>  (+593) 995 666 425</span>
-          <div><FaMailBulk size={15} color ="#007bff"/> liczm1311@hotmail.com</div>
-          <div><i className="fas fa-map-marker-alt"></i> Cuenca - Ecuador</div>
+          <div><FaMailBulk size={15} color ="#007bff"/> servicioalcliente@vicontcontable.com</div>
+          <div><i className="fas fa-map-marker-alt"></i> Av. Pío Bravo y Tarqui / Cuenca-Ecuador</div>
         </div>
 
         {/* Enlaces rápidos */}

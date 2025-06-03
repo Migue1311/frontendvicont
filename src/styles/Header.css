@@ -1,8 +1,8 @@
 
 /* src/components/Header.css */
 .header {
-    background-color: #2562b3;
-    box-shadow: 0 4px 6px rgba(214, 211, 211, 0.692);
+    background-color: #fffcfc;
+    box-shadow: 0 4px 6px rgba(110, 108, 108, 0.692);
     padding: 10px 20px;
     height: auto;
   }
@@ -30,12 +30,6 @@
     width: auto;
   }
   
-  .slogan {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
   .header-title {
     font-size: 8px;
     margin: 0;
@@ -59,7 +53,7 @@
   
   .nav a {
     text-decoration: none;
-    color: #fffbfb;
+    color: #111666;
     font-weight: bold;
     transition: color 0.3s ease;
   }
@@ -87,7 +81,7 @@
   }
 
   .dropdown-container .dropdown{
-    background-color: #2562b3;
+    background-color: rgba(255, 255, 255, 0.692);
     display: block;
   }
   .dropdown li{
@@ -97,7 +91,7 @@
   .dropdown li a{
     display: block;
     padding: 12px 16px;
-    color: #ffffff;
+    color: #111666;
     text-decoration: none;
     border-bottom: 1px solid #ddd;
   }
@@ -107,7 +101,7 @@
   }
 
   .dropdown li a:hover{
-    background-color: #f1f1f1;
+    background-color: #525050;
   }
 
   /*Diseño Responsivo */
