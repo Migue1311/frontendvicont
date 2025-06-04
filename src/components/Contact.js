@@ -21,6 +21,7 @@ const Contact = () => {
   };
 
   const handleSubmit = async(e) => {
+    setIsLoading(true);
     e.preventDefault();
     try{
       const response = await fetch('https://webpages-zlkq.onrender.com/api/contacts', {
