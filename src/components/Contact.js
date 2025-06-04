@@ -13,6 +13,8 @@ const Contact = () => {
     message: '',
   });
 
+  const[isLoading, setIsLoading] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -44,6 +46,8 @@ const Contact = () => {
     console.error('Error:', error);
     alert('Hubo un problema al enviar la consulta. Intentalo de nuevo');
   }
+  
+    setIsLoading(false);
   };
 
   const formFields = [
@@ -88,7 +92,12 @@ const Contact = () => {
             </div>
           ))}
         </div>
-        <Button text="Enviar Consulta" onSubmit={handleSubmit}/>
+        <Button
+            text="Enviar Consulta"
+            onClick={handleSubmit}
+            isLoading={isLoading}
+            type="submit"
+        />
       </form>
     </div>
   );

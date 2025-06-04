@@ -36,7 +36,10 @@
   color: black;
 }
 
-
+.contact-button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
 
   
 /*Diseño Responsivo */
