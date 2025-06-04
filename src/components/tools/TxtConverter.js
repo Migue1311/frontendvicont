@@ -3,6 +3,7 @@ import '../../styles/tools/TxtConverter.css'; // Asegúrate de tener este archiv
 import styles from '../../styles/Archives.module.css';
 import NormalTitle from '../../archives/NormalTitle';
 import DescriptionBlack from '../../archives/DescriptionBlack';
+import Button from '../../archives/Button';
 
 
 const TxtConverter = () => {
@@ -44,8 +45,10 @@ const TxtConverter = () => {
     setFiles(selectedFiles);
   };
 
+  const[isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (e) => {
+    
     e.preventDefault();
     if (files.length === 0) {
       alert("Por favor selecciona al menos un archivo TXT.");
@@ -56,7 +59,7 @@ const TxtConverter = () => {
     files.forEach((file) => {
       formData.append('txtFiles', file); // ¡nombre exacto que espera el backend!
     });
-
+    setIsLoading(true);
     try {
       console.log('Enviando archivo(s)...');
       const response = await fetch('https://webpages-zlkq.onrender.com/api/converter/process-txt', {
@@ -83,6 +86,7 @@ const TxtConverter = () => {
       console.error('Error:', error);
       alert('Hubo un error al convertir el archivo.');
     }
+    setIsLoading(false);
   };
 
   return (
@@ -117,7 +121,12 @@ const TxtConverter = () => {
           </div>
         )}
 
-        <button type="submit" className={styles.button}>Convertir </button>
+        <Button
+            text="Procesar TXT"
+            onClick={handleSubmit}
+            isLoading={isLoading}
+            type="submit"
+          />
       </form>
     </div>
   );

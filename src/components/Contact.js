@@ -13,13 +13,13 @@ const Contact = () => {
     message: '',
   });
 
-  const[isLoading, setIsLoading] = useState(false);
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
+  const [isLoading, setIsLoading] = useState(false);
+  
   const handleSubmit = async(e) => {
     setIsLoading(true);
     e.preventDefault();
@@ -98,7 +98,7 @@ const Contact = () => {
             onClick={handleSubmit}
             isLoading={isLoading}
             type="submit"
-        />
+          />
       </form>
     </div>
   );
