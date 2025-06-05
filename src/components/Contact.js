@@ -19,7 +19,7 @@ const Contact = () => {
   };
 
   const [isLoading, setIsLoading] = useState(false);
-  
+    
   const handleSubmit = async(e) => {
     setIsLoading(true);
     e.preventDefault();
@@ -34,7 +34,6 @@ const Contact = () => {
       if(!response.ok){
         throw new Error("Error al enviar la consulta");
       }
-
     alert('¡Gracias por contactarnos! Nos pondremos en contacto pronto.');
     setFormData({
       businessName: '',
@@ -47,7 +46,7 @@ const Contact = () => {
     console.error('Error:', error);
     alert('Hubo un problema al enviar la consulta. Intentalo de nuevo');
   }
-  
+    
     setIsLoading(false);
   };
 
