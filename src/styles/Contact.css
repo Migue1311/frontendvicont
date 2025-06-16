@@ -1,7 +1,7 @@
 /* Contact.css */
 .contact {
   padding: 2rem;
-  background-color: #010a3bd8;
+  background-color: #003facd8;
   text-align: center;
 }
 
@@ -44,11 +44,8 @@
   
 /*Diseño Responsivo */
 @media (max-width: 768px) {
-  .form-columns {
+  .blog-post {
     flex-direction: column;  /*Cambia a una sola columna en pantallas pequeñas */
   }
 
-  .contact-form-container {
-    max-width: 600px;
-  }
 }

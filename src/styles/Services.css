@@ -8,9 +8,9 @@
   background-image: url('../images/fondoplomo.png');
   background-size: cover;
   background-position: center;
-  background-color: #666;
+  background-color: #faf7f7;
   position: relative;
-  color: #666;
+  color: #f8f8f8;
 }
 
 .services-logo {
@@ -28,7 +28,7 @@
 .service-title {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: rgb(87, 86, 86);
+  color: rgb(35, 35, 35);
   text-align: center;
   position: relative;
   z-index: 2;

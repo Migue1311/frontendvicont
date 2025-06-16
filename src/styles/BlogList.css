@@ -1,0 +1,31 @@
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.post-card {
+  background-color: #ece6e6;
+  padding: 20px;
+  gap: 2rem;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(255, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-5px); /* sube 5px */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* sombra más fuerte */
+}
+
+@media (max-width: 768px) {
+  .blog-list {
+    padding: 2rem 1rem;
+  }
+
+  .post-card {
+    font-size: 0.8rem;
+  }
+
+}

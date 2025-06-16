@@ -47,6 +47,7 @@ const Header = () => {
                             </ul>
                         )}
                         </li>
+                        <li><Link to="/blog">Blog</Link></li>
                         <li><Link to="/contact">Contactos</Link></li>
                     </ul>
                 </nav>

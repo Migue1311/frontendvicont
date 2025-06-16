@@ -45,11 +45,11 @@ const Footer = () => {
 
       {/* Derechos de autor */}
       <div className="footer-bottom">
-        <span>&copy; 2025 VICONT. Todos los derechos reservados.</span>
+        <span>&copy; 2025 VICONTCONTABLE. Todos los derechos reservados.</span>
         <span>
           Desarrollado por
           <a href="/" target="_blank" rel="noopener noreferrer">
-            VICONT
+            VTC
           </a>
           .
         </span>
